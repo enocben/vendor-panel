@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 function validatePassword(password: string) {
   const errors = {
-    tooShort: password.length < 12,
+    tooShort: password.length < 8,
     noLower: !/[a-z]/.test(password),
     noUpper: !/[A-Z]/.test(password),
     noDigit: !/[0-9]/.test(password),

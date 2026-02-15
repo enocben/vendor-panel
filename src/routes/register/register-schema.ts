@@ -4,7 +4,7 @@ export const RegisterSchema = z.object({
   name: z.string().min(2, { message: "Name should be a string" }),
   email: z.string().email({ message: "Invalid email" }),
   password: z.string()
-    .min(12, { message: "at least 12 characters" })
+    .min(8, { message: "at least 8 characters" })
     .regex(/[a-z]/, { message: "at least one lowercase case" })
     .regex(/[A-Z]/, { message: "at least one upper case" })
     .regex(/[0-9]/, { message: "at least one digit" })
