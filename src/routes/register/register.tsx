@@ -31,7 +31,7 @@ export const Register = () => {
     isValid: false,
     lower: false,
     upper: false,
-    '12chars': false,
+    '8chars': false,
     digit: false,
     specialChar: false
   });
